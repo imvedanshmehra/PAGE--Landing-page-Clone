@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Verdana, Tahoma, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header.js */
+.header {
+  background-color: #457cbf;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-img {
+  width: 500px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Navigation.js */
+.navbar {
+  list-style-type: none;
+  background-color: rgb(106, 145, 186);
 }
-
-.App-link {
-  color: #61dafb;
+.nav {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 15px;
+  border-right: 3px solid #fff;
 }
+.nav:hover {
+  text-decoration: none;
+  color: blue;
+}
+/* Home.js */
+.inactive-btn {
+  min-width: 35%;
+  border: none;
+  padding: 3px;
+  background-color: #a7a1a1;
+  color: #fff;
+  transform: translateY(5px);
+}
+.active-btn {
+  min-width: 35%;
+  border: none;
+  padding: 3px;
+  background-color: #457cbf;
+  color: #fff;
+  transform: translateY(none);
+}
+.inactive-btn:focus,
+.active-btn:focus {
+  outline: none;
+}
+.box {
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  border: 1px solid #457cbf;
+}
+/* Footer */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-footer {
+  position: sticky;
+  bottom: initial;
+  background-color: #457cbf;
+  font-size: small;
 }
